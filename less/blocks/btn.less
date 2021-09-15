@@ -1,0 +1,66 @@
+.btn {
+  position: relative;
+  padding: 15px 0;
+  padding-left: 144px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-feature-settings: 'salt' on, 'liga' off;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/icons/play-circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 56px;
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+  }
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.more {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #8FFFFF;
+  text-decoration: none;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    width: 22px;
+    height: 14px;
+    background-image: url(../img/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
