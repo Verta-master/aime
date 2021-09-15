@@ -1,0 +1,60 @@
+.modal {
+  width: 1165px;
+  max-width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: #fff;
+  background-color: rgba(255,255,255,0);
+}
+.fancybox-is-open .fancybox-bg {
+  opacity: 1;
+  background-color: rgba(0, 17, 43, 0.74);
+  background-image: linear-gradient(179.99deg, rgba(0, 17, 43, 0.74) 0.01%, rgba(0, 18, 45, 0.74) 73.61%, rgba(1, 23, 57, 0.74) 78.98%, rgba(0, 9, 22, 0.4736) 91.14%);
+  backdrop-filter: blur(15px);
+}
+.fancybox-close-small svg {
+  opacity: 1;
+  fill: #fff;
+}
+.fancybox-close-small {
+  color: #fff;
+  padding: 0;
+  top: 35px;
+}
+.modal__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 86px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  font-feature-settings: 'salt' on, 'liga' off;
+}
+.modal__text {
+  padding-left: 97px;
+  padding-right: 80px;
+}
+.modal__slider {
+  position: relative;
+}
+.modal__send {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 78px;
+  height: 78px;
+  display: block;
+  background-color: rgba(0, 71, 255, 0.17);
+  background-image: url(../img/icons/arrow-send.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  .transition();
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+    .transition();
+  }
+}

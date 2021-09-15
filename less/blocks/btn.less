@@ -9,6 +9,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-feature-settings: 'salt' on, 'liga' off;
+  .transition();
   
   &::before {
     content: "";
@@ -33,7 +34,11 @@
   }
   &:hover,
   &:active {
-    text-decoration: underline;
+    color: #8FFFFF;
+    .transition();
+  }
+  &--arrow::before {
+    background-image: url(../img/icons/play-circle2.svg);
   }
 }
 
@@ -45,6 +50,7 @@
   font-feature-settings: 'salt' on, 'liga' off;
   color: #8FFFFF;
   text-decoration: none;
+  .transition();
   
   &::after {
     content: "";
@@ -61,6 +67,7 @@
   
   &:hover,
   &:active {
-    text-decoration: underline;
+    color: #fff;
+    .transition();
   }
 }

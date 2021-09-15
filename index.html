@@ -7,8 +7,9 @@
   <title>Title</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
       <nav class="menu">
         <button type="button" class="menu__btn"></button>
         <ul class="menu__list">
-          <li class="menu__item"><a href="#">Главная</a></li>
+          <li class="menu__item menu__item--active"><a href="#">Главная</a></li>
           <li class="menu__item"><a href="#">Проекты</a></li>
           <li class="menu__item"><a href="#">О нас</a></li>
           <li class="menu__item"><a href="#">Контакты</a></li>
@@ -85,44 +86,52 @@
         <h2>Проекты</h2>
         <ul class="projects__list">
           <li class="projects__item">
-            <figure class="projects__img">
-              <img src="img/images/img-1.jpg" alt="Industrial Security AI (ISA)">
-            </figure>
-            <div class="projects__text">
-              <h3>Industrial Security AI (ISA)</h3>
-              <p>Inteligent Sysytem for Monitoring and Remote Control of Industrial Safety AI (ISA)</p>
-            </div>
+            <a data-fancybox data-src="#call" href="javascript:;" class="projects__link">
+              <figure class="projects__img">
+                <img src="img/images/img-1.jpg" alt="Industrial Security AI (ISA)">
+              </figure>
+              <div class="projects__text">
+                <h3>Industrial Security AI (ISA)</h3>
+                <p>Inteligent Sysytem for Monitoring and Remote Control of Industrial Safety AI (ISA)</p>
+              </div>
+            </a>
           </li>
           <li class="projects__item">
-            <figure class="projects__img">
-              <img src="img/images/img-1.jpg" alt="AI in The Oil and Gas Industry">
-            </figure>
-            <div class="projects__text">
-              <h3>AI in The Oil and Gas Industry</h3>
-              <p>Neural Networks in in The Oil and Gas Industry</p>
-            </div>
+            <a data-fancybox data-src="#call" href="javascript:;" class="projects__link">
+              <figure class="projects__img">
+                <img src="img/images/img-1.jpg" alt="AI in The Oil and Gas Industry">
+              </figure>
+              <div class="projects__text">
+                <h3>AI in The Oil and Gas Industry</h3>
+                <p>Neural Networks in in The Oil and Gas Industry</p>
+              </div>
+            </a>
           </li>
           <li class="projects__item">
-            <figure class="projects__img">
-              <img src="img/images/img-1.jpg" alt="Industrial Security AI (ISA)">
-            </figure>
-            <div class="projects__text">
-              <h3>Industrial Security AI (ISA)</h3>
-              <p>Inteligent Sysytem for Monitoring and Remote Control of Industrial Safety AI (ISA)</p>
-            </div>
+            <a data-fancybox data-src="#call" href="javascript:;" class="projects__link">
+              <figure class="projects__img">
+                <img src="img/images/img-1.jpg" alt="Industrial Security AI (ISA)">
+              </figure>
+              <div class="projects__text">
+                <h3>Industrial Security AI (ISA)</h3>
+                <p>Inteligent Sysytem for Monitoring and Remote Control of Industrial Safety AI (ISA)</p>
+              </div>
+            </a>
           </li>
           <li class="projects__item">
-            <figure class="projects__img">
-              <img src="img/images/img-1.jpg" alt="AI in The Oil and Gas Industry">
-            </figure>
-            <div class="projects__text">
-              <h3>AI in The Oil and Gas Industry</h3>
-              <p>Neural Networks in in The Oil and Gas Industry</p>
-            </div>
+            <a data-fancybox data-src="#call" href="javascript:;" class="projects__link">
+              <figure class="projects__img">
+                <img src="img/images/img-1.jpg" alt="AI in The Oil and Gas Industry">
+              </figure>
+              <div class="projects__text">
+                <h3>AI in The Oil and Gas Industry</h3>
+                <p>Neural Networks in in The Oil and Gas Industry</p>
+              </div>
+            </a>
           </li>
         </ul>
         <div class="projects__btn">
-          <a href="#" class="btn">Еще</a>
+          <a href="#" class="btn btn--arrow">Еще</a>
         </div>
       </div>
     </section>
@@ -147,7 +156,7 @@
       </div>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a href="#">Главная</a></li>
+          <li class="menu__item menu__item--active"><a href="#">Главная</a></li>
           <li class="menu__item"><a href="#">Проекты</a></li>
           <li class="menu__item"><a href="#">О нас</a></li>
           <li class="menu__item"><a href="#">Контакты</a></li>
@@ -157,7 +166,64 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <div class="modal__title">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <p>Проект: Industrial Security AI (ISA)</p>
+    </div>
+    <div class="modal__slider">
+      <a href="#" class="modal__send" title="Поделиться"></a>
+      <div class="swiper-container slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider__item">
+            <img src="img/images/img-2.jpg" alt="Проект: Industrial Security AI (ISA)">
+          </div>
+          <div class="swiper-slide slider__item">
+            <img src="img/images/img-3.jpg" alt="Проект: Industrial Security AI (ISA)">
+          </div>
+          <div class="swiper-slide slider__item">
+            <img src="img/images/img-2.jpg" alt="Проект: Industrial Security AI (ISA)">
+          </div>
+          <div class="swiper-slide slider__item">
+            <img src="img/images/img-3.jpg" alt="Проект: Industrial Security AI (ISA)">
+          </div>
+        </div>
+        <div class="swiper-pagination slider__pagination"></div>
+        <div class="swiper-button-prev slider__prev"></div>
+        <div class="swiper-button-next slider__next"></div>
+      </div>
+    </div>
+    <div class="modal__text">
+      <p class="title">О проекте</p>
+      <p>Порой происходят события, которые кардинально меняют наши взгляды, убеждения, нашу жизнь. Иногда они кажутся просто немыслимыми и фантастическими, а иногда лишь чередой случайностей. И именно эта череда мелочей становится главным реформатором нашей жизни. Компания «Cybertime System» стала некой отправной точкой.</p>
+      <p>Создавалась она лишь благодаря альтруистским началам и являлась «пробой пера». «Перо», как видно, до сих пор «пишет» и делает это год от года все лучше.</p>
+      <p>История развития компании «Cybertime System» началась с организации фирмы «Crashtest» в 2005 году. Передовым направлением деятельности была выбрана компьютерную безопасность. В те годы рынок IT технологий развивался стремительными темпами, поэтому ставка на исключительно высокотехнологичный сегмент рынка была логична. Первыми клиентами компании стали крупнейшие предприятия Екатеринбурга: телефонные компании, холдинги, банки.</p>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+<!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.slider', {
+      pagination: {
+        el: '.slider__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.slider__next',
+        prevEl: '.slider__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      spaceBetween: 100,
+    });
+  </script>
 </body>
 </html>
