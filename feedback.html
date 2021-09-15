@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrap">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Главная</a></li>
+          <li class="menu__item"><a href="#">Проекты</a></li>
+          <li class="menu__item"><a href="#">О нас</a></li>
+          <li class="menu__item menu__item--active"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="lang">
+        <ul class="lang__list">
+          <li class="lang__item lang__item--active"><a href="#">Ru</a></li>
+          <li class="lang__item"><a href="#">En</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+  <section class="feedback">
+    <div class="wrapper">
+      <h1>Обратная связь</h1>
+      <form action="#" class="feedback__form">
+        <input type="text" class="feedback__input" placeholder="Имя">
+        <input type="text" class="feedback__input" placeholder="Email">
+        <textarea class="feedback__message" placeholder="Сообщение"></textarea>
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" class="checkbox-label">Я не робот</label>
+        <button type="submit" class="feedback__btn">Отправить</button>
+      </form>
+    </div>
+  </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Главная</a></li>
+          <li class="menu__item"><a href="#">Проекты</a></li>
+          <li class="menu__item"><a href="#">О нас</a></li>
+          <li class="menu__item menu__item--active"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__copyright">© 2020 SmimilenDesign</div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+</body>
+</html>
