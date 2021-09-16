@@ -1,11 +1,24 @@
 .promo {
+  position: relative;
   margin-bottom: 77px;
   padding-top: 300px;
   padding-bottom: 213px;
-  background-image: url(../img/images/bg-main.png);
+  background-image: url(../img/images/bg-promo.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 954px;
+    height: 746px;
+    background-image: url(../img/images/promo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 .promo__info {
   max-width: 745px;
