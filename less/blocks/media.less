@@ -1,0 +1,192 @@
+@media (max-width: 1140px) {
+  .promo {
+    padding-top: 200px;
+  }
+  .projects__img {
+    height: 340px;
+  }
+}
+@media (max-width: 1022px) {
+  .projects__img {
+    height: 250px;
+  }
+  .promo::before {
+    left: 0;
+    width: 100%;
+    max-height: 500px;
+    background-size: contain;
+    background-position: bottom right;
+  }
+  .promo {
+    padding-bottom: 300px;
+  }
+  .projects {
+    margin-bottom: 100px;
+  }
+  .techno {
+    margin-bottom: 50px;
+  }
+  .projects__list {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 766px) {
+  .header {
+    position: relative;
+  }
+  .wrapper,
+  .header__wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .promo {
+    padding-top: 125px;
+    
+    &::before {
+      top: 0;
+      left: 0;
+      max-height: 100%;
+      background-image: url(../img/images/bg-mobile.png);
+      background-position: top right;
+    }
+  }
+  h1, h2,
+  .title,
+  .promo__title {
+    font-size: 24px;
+    line-height: 45px;
+  }
+  .logo img {
+    height: 35px;
+    width: auto;
+  }
+  .techno__list {
+    justify-content: space-around;
+  }
+  .techno__item {
+    font-size: 14px;
+  }
+  .techno {
+    margin-bottom: 0;
+  }
+  .projects__list {
+    display: block;
+    margin-bottom: 60px;
+  }
+  .projects__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .projects__img {
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .projects__text {
+    position: static;
+    transform: none;
+    text-align: left;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .title-3, h3 {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .about::after {
+    display: none;
+  }
+  main {
+    padding-bottom: 200px;
+    background-size: auto 1500px;
+  }
+  .footer {
+    bottom: 40px;
+  }
+  .footer__copyright {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .footer .menu {
+    margin-bottom: 50px;
+  }
+  .footer .menu__item {
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 25px;
+  }
+  .footer .logo {
+    margin-bottom: 16px;
+  }
+  .menu__btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    &--close {
+      background-image: url(../img/icons/close.svg);
+    }
+  }
+  .menu__wrap {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 15px 24px;
+    background-color: rgba(0, 17, 43, 0.74);
+    background-image: linear-gradient(179.99deg, rgba(0, 17, 43, 0.74) 0.01%, rgba(0, 18, 45, 0.74) 73.61%, rgba(1, 23, 57, 0.74) 78.98%, rgba(0, 9, 22, 0.4736) 91.14%);
+    backdrop-filter: blur(15px);
+  }
+  .header {
+    .menu__list {
+      display: block;
+    }
+    .menu__item {
+      margin-right: 0;
+      text-align: center;
+      line-height: 2;
+    }
+  }
+  .lang {
+    position: static;
+    margin-top: 20px;
+  }
+  .lang__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 480px) {
+  .promo {
+    padding-bottom: 120px;
+  }
+  .modal__title {
+    margin-bottom: 47px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .modal {
+    padding: 24px;
+  }
+  .fancybox-close-small {
+    top: 24px;
+  }
+  .modal__send,
+  .slider__next, 
+  .slider__prev {
+    display: none;
+  }
+  .modal__text,
+  .slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal__text {
+    font-size: 16px;
+  }
+}
