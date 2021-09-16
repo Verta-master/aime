@@ -15,6 +15,21 @@
   position: relative;
   margin-bottom: 64px;
 }
+.projects__link {
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+    .projects__text {
+      color: #8FFFFF;
+      .transition();
+    }
+    .btn-arrow svg {
+      stroke: #8FFFFF;
+      .transition();
+    }
+  }
+}
 .projects__img {
   width: 100%;
   height: 380px;
@@ -50,20 +65,38 @@
 .projects__btn {
   text-align: center;
 }
-.projects__list--internal {
-  display: block;
+.projects--internal {
+  padding-top: 160px;
   
+  .projects__list {
+    display: block;
+    margin-top: 45px;
+  }
   .projects__item {
     width: 100%;
+    margin-bottom: 110px;
+  }
+  .projects__link {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 100%;
   }
   .projects__img {
-    width: 50%;
+    width: 49%;
+    height: auto;
   }
   .projects__text {
-    width: 50%;
-    padding-left: 50px;
+    position: static;
+    width: 49%;
+    padding-left: 25px;
+    transform: none;
+    text-align: left;
+    .transition();
+    
+    .btn-arrow {
+      margin-top: 30px;
+    }
   }
 }
